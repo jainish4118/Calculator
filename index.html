@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color: burlywood;">
+    <marquee behavior="alternate" direction="left" style="font-size: 30px;">Calculator by <b style="font-family: monospace;">JAINISH JHAVERI</b></marquee>
+    <div class="boldy">
+    <div class="calculator">
+        <b style="background-color: orangered;color:black;border: 5px solid black;border-radius: 10px;font-size: 38px;font-family: cursive ;">CALCULATOR</b>
+        <input id="input1" type="number" placeholder="1st number:" />
+        <input id="input2" type="number" placeholder="2nd number:" />
+        <div class="buttons-container">
+            <button value="ADD" class="operator-btn" onclick="clickevent('ADD')">+<br>ADD</button>
+            <button value="MUL" class="operator-btn" onclick="clickevent('MUL')">*<br>MUL</button>
+            <button value="MIN" class="operator-btn" onclick="clickevent('MIN')">-<br>MIN</button>
+            <button value="DIV" class="operator-btn" onclick="clickevent('DIV')">/<br>DIV</button>
+        </div>
+        <button class="equal" onclick="handleClick()">=</button>
+        <input id="input3" class="result" placeholder="ANSWER" disabled />
+    </div>
+    <script src="./index.js"></script>
+</div>
+</body>
+</html>
